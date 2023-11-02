@@ -3,51 +3,62 @@ import Container from "../Container/Container";
 import { BsImages } from "react-icons/bs";
 import { toast } from "react-toastify";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
+import image11 from "../../assets/images/image-11.jpeg";
+import image9 from "../../assets/images/image-9.webp";
+import image10 from "../../assets/images/image-10.jpeg";
+import image7 from "../../assets/images/image-7.webp";
+import image6 from "../../assets/images/image-6.webp";
+import image5 from "../../assets/images/image-5.webp";
+import image4 from "../../assets/images/image-4.webp";
+import image3 from "../../assets/images/image-3.webp";
+import image2 from "../../assets/images/image-2.webp";
+import image1 from "../../assets/images/image-1.webp";
+import image8 from "../../assets/images/image-8.webp";
 
 const data = [
   {
     id: "item-1",
-    imageUrl: "https://i.ibb.co/JmLhtQm/image-11.jpg",
+    imageUrl: image11,
   },
   {
     id: "item-2",
-    imageUrl: "https://i.ibb.co/KDVt9rC/image-9.webp",
+    imageUrl: image9,
   },
   {
     id: "item-3",
-    imageUrl: "https://i.ibb.co/ynBDqxY/image-10.jpg",
+    imageUrl: image10,
   },
   {
     id: "item-4",
-    imageUrl: "https://i.ibb.co/8gwdb0X/image-7.webp",
+    imageUrl: image7,
   },
   {
     id: "item-5",
-    imageUrl: "https://i.ibb.co/h7DGbL4/image-6.webp",
+    imageUrl: image6,
   },
   {
     id: "item-6",
-    imageUrl: "https://i.ibb.co/vBNRLnC/image-5.webp",
+    imageUrl: image5,
   },
   {
     id: "item-7",
-    imageUrl: "https://i.ibb.co/dg63mHq/image-4.webp",
+    imageUrl: image4,
   },
   {
     id: "item-8",
-    imageUrl: "https://i.ibb.co/HFvJ8m4/image-3.webp",
+    imageUrl: image3,
   },
   {
     id: "item-9",
-    imageUrl: "https://i.ibb.co/88Y4CTZ/image-2.webp",
+    imageUrl: image2,
   },
   {
     id: "item-10",
-    imageUrl: "https://i.ibb.co/543LW3w/image-1.webp",
+    imageUrl: image1,
   },
   {
     id: "item-11",
-    imageUrl: "  https://i.ibb.co/Dgs31Pb/image-8.webp",
+    imageUrl: image8,
     label: "Add Images", // Add a label property to the "Add Images" object
   },
 ];
@@ -56,7 +67,7 @@ const ImageGallery = () => {
   const [images, setImages] = useState([]);
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [uploadedFiles, setUploadedFiles] = useState([]);
-  const [isDarkMode, setIsDarkMode] = useState(false); // Define isDarkMode state
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const addImages = (files) => {
     const filesArray = Array.from(files); // Convert files to an array
@@ -154,15 +165,14 @@ const ImageGallery = () => {
       draggable: true,
     });
   };
-// ThemeMode
+  // ThemeMode
   const handleThemeChange = () => {
     setIsDarkMode((prevMode) => {
-        document.body.classList.toggle("dark-theme", !prevMode);
-        document.body.classList.toggle("light-theme", prevMode);
-        return !prevMode;
+      document.body.classList.toggle("dark-theme", !prevMode);
+      document.body.classList.toggle("light-theme", prevMode);
+      return !prevMode;
     });
-};
-
+  };
 
   return (
     <div>
