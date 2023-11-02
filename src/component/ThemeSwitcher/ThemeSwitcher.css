@@ -1,0 +1,97 @@
+/* ThemeSwitcher.css */
+/* Dark And Night Mode Color */
+:root {
+    --primary-color-light: #302ae6;
+    --secondary-color-light: #526390;
+    --font-color-light: #424242;
+    --bg-color-light: #fff;
+    --heading-color-light: #292922;
+
+    --primary-color-dark: #9a97f3;
+    --secondary-color-dark: #818cab;
+    --font-color-dark: #e1e1ff;
+    --bg-color-dark: #161625;
+    --heading-color-dark: #818cab;
+    --bg-color-dark: #161625;
+
+    /* --body-bg-color: var(--bg-color-light); */
+
+
+}
+
+.light-theme {
+    background-color: var(--bg-color-light); /* Define light theme styles */
+    color: var(--font-color-light);
+    transition: background-color 0.5s ease;
+}
+
+.dark-theme {
+    background-color: var(--bg-color-dark); /* Define dark theme styles */
+    color: var(--font-color-dark);
+    transition: background-color 0.5s ease;
+}
+
+.theme-switcher {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Adjust the colors used in the ThemeSwitcher component */
+.theme-switcher.dark {
+    color: var(--primary-color-dark);
+}
+
+.theme-switcher.light {
+    color: var(--primary-color-light);
+}
+
+
+
+
+
+/*  */
+/* ThemeSwitcher.css */
+.theme-switcher {
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #ccc;
+  background: #fff;
+  transition: background 0.3s; /* Add transition for a smooth color change */
+}
+
+.theme-switcher::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+  background: #ccc;
+  transition: transform 0.3s;
+}
+
+.theme-switcher.light::before {
+  transform: translateX(0);
+}
+
+.theme-switcher.dark::before {
+  transform: translateX(20px);
+}
+
+.theme-switcher.light {
+  background: #fff; /* Light mode button color */
+}
+
+.theme-switcher.dark {
+  background: #333; /* Dark mode button color */
+  color: #fff; /* Font color for dark mode */
+}
+
