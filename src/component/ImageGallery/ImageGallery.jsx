@@ -3,62 +3,51 @@ import Container from "../Container/Container";
 import { BsImages } from "react-icons/bs";
 import { toast } from "react-toastify";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
-import image11 from "../../assets/images/image-11.jpeg";
-import image9 from "../../assets/images/image-9.webp";
-import image10 from "../../assets/images/image-10.jpeg";
-import image7 from "../../assets/images/image-7.webp";
-import image6 from "../../assets/images/image-6.webp";
-import image5 from "../../assets/images/image-5.webp";
-import image4 from "../../assets/images/image-4.webp";
-import image3 from "../../assets/images/image-3.webp";
-import image2 from "../../assets/images/image-2.webp";
-import image1 from "../../assets/images/image-1.webp";
-import image8 from "../../assets/images/image-8.webp";
 
 const data = [
   {
     id: "item-1",
-    imageUrl: image11,
+    imageUrl: "https://i.ibb.co/JmLhtQm/image-11.jpg",
   },
   {
     id: "item-2",
-    imageUrl: image9,
+    imageUrl: "https://i.ibb.co/KDVt9rC/image-9.webp",
   },
   {
     id: "item-3",
-    imageUrl: image10,
+    imageUrl: "https://i.ibb.co/ynBDqxY/image-10.jpg",
   },
   {
     id: "item-4",
-    imageUrl: image7,
+    imageUrl: "https://i.ibb.co/8gwdb0X/image-7.webp",
   },
   {
     id: "item-5",
-    imageUrl: image6,
+    imageUrl: "https://i.ibb.co/h7DGbL4/image-6.webp",
   },
   {
     id: "item-6",
-    imageUrl: image5,
+    imageUrl: "https://i.ibb.co/vBNRLnC/image-5.webp",
   },
   {
     id: "item-7",
-    imageUrl: image4,
+    imageUrl: "https://i.ibb.co/dg63mHq/image-4.webp",
   },
   {
     id: "item-8",
-    imageUrl: image3,
+    imageUrl: "https://i.ibb.co/HFvJ8m4/image-3.webp",
   },
   {
     id: "item-9",
-    imageUrl: image2,
+    imageUrl: "https://i.ibb.co/88Y4CTZ/image-2.webp",
   },
   {
     id: "item-10",
-    imageUrl: image1,
+    imageUrl: "https://i.ibb.co/543LW3w/image-1.webp",
   },
   {
     id: "item-11",
-    imageUrl: image8,
+    imageUrl: "  https://i.ibb.co/Dgs31Pb/image-8.webp",
     label: "Add Images", // Add a label property to the "Add Images" object
   },
 ];
